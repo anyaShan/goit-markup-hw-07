@@ -634,10 +634,7 @@ footer > .conteiner {
 
 /* ---------------------------------Button------------------------------- */
 
-.hero-button,
-.works-button,
-.footer-button,
-.modal-form-button {
+.button {
   display: inline-block;
   font-family: inherit;
   text-align: center;
@@ -646,9 +643,9 @@ footer > .conteiner {
   transition: background-color var(--transition), color var(--transition);
 }
 
-.hero-button,
-.footer-button,
-.modal-form-button {
+.hero__button,
+.footer__button,
+.modal__button {
   min-width: 200px;
   padding: 10px 32px;
   background-color: var(--accent-color);
@@ -662,32 +659,32 @@ footer > .conteiner {
   line-height: 1.9;
   letter-spacing: 0.06em;
 }
-.footer-button {
+.footer__button {
   display: flex;
   align-items: center;
   margin-left: 12px;
   padding: 10px 29px;
 }
-.footer-button > .icon {
+.button__icon {
   display: inline-block;
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
-.modal-form-button {
+.modal__button {
   box-shadow: var(--box-shadow);
 }
 
-.hero-button:hover,
-.hero-button:focus,
-.footer-button:hover,
-.footer-button:focus,
-.modal-form-button:hover,
-.modal-form-button:focus {
+.hero__button:hover,
+.hero__button:focus,
+.footer__button:hover,
+.footer__button:focus,
+.modal__button:hover,
+.modal__button:focus {
   background-color: var(--accent-color-secondary);
   color: var(--white-text-color);
 }
-.works-button {
+.works__button {
   padding: 6px 22px;
   background-color: var(--background-secondary-color);
   color: var(--secondary-text-color);
@@ -700,9 +697,9 @@ footer > .conteiner {
   font-size: 16px;
   line-height: 1.6;
 }
-.works-button.current,
-.works-button:hover,
-.works-button:focus {
+.works__button--current,
+.works__button:hover,
+.works__button:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
   box-shadow: var(--box-shadow-works-nav);
