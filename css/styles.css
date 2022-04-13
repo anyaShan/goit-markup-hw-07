@@ -287,22 +287,22 @@ img {
 
 /* --------------------------------Features------------------------------ */
 
-.features-content.section {
+.features {
   padding-top: 0;
 }
-.features-title {
+.features__title {
   margin-bottom: 50px;
 }
-.features-list {
+.features__list {
   display: flex;
 }
-.features-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
-.features-item-thumb {
+.features__card {
   position: relative;
 }
-.features-thumb {
+.features__thumb {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -312,7 +312,7 @@ img {
   align-items: center;
   background-color: var(--bg-secondary-gradient);
 }
-.features-caption {
+.features__caption {
   color: var(--white-text-color);
 
   font-weight: 700;
