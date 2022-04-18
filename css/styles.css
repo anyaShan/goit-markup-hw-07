@@ -84,6 +84,45 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* --------------------------------Networks------------------------------ */
+.networks {
+  display: flex;
+}
+.networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+.networks__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+}
+.networks__icon:hover,
+.networks__icon:focus {
+  background-color: var(--accent-color);
+}
+.networks__icon--fotter {
+  background-color: var(--background-link-color);
+}
+.networks__svg {
+  width: 20px;
+  height: 20px;
+}
+.networks__svg--footer {
+  fill: var(--background-primary-color);
+}
+.networks__svg--team {
+fill: var(--icon-color);
+transition: fill var(--transition);
+}
+.networks__icon:hover .networks__svg--team,
+.networks__icon:focus .networks__svg--team {
+  fill: var(--background-primary-color);
+}
 /* ------------------------------------LOGO------------------------------ */
 
 .logo {
@@ -325,28 +364,28 @@ img {
 
 /* --------------------------------Team---------------------------------- */
 
-.team-content {
+.team {
   background-color: var(--background-secondary-color);
 }
-.team-title {
+.team__title {
   margin-bottom: 50px;
 }
-.team-list {
+.team__list {
   display: flex;
 }
-.team-item {
+.team__item {
   max-width: 270px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-primary-color);
   box-shadow: var(--box-shadow);
 }
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
-.team-card {
+.team__card {
   padding: 30px;
 }
-.team-caption {
+.team__caption {
   color: var(--secondary-text-color);
   margin-bottom: 10px;
 
@@ -355,38 +394,11 @@ img {
   line-height: 1.19;
   text-align: center;
 }
-.team-text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   margin-bottom: 16px;
-}
-.team-links-list {
-  display: flex;
-  justify-content: space-between;
-}
-.team-links-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color var(--transition);
-}
-.team-links-icon:hover,
-.team-links-icon:focus {
-  background-color: var(--accent-color);
-}
-.team-links-icon > .icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--icon-color);
-  transition: fill var(--transition);
-}
-.team-links-icon:hover .icon,
-.team-links-icon:focus .icon {
-  fill: var(--background-primary-color);
 }
 
 /* -------------------------------Clients------------------------------- */
