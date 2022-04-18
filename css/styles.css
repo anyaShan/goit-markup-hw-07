@@ -403,13 +403,13 @@ transition: fill var(--transition);
 
 /* -------------------------------Clients------------------------------- */
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 }
-.clients-list {
+.clients__list {
   display: flex;
 }
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 .clients-links {
@@ -426,12 +426,12 @@ transition: fill var(--transition);
 .clients-links:focus {
   border: var(--border-icon-accent);
 }
-.clients-links > .icon {
+.clients-links__icon {
   fill: var(--icon-color);
   transition: fill var(--transition);
 }
-.clients-links:hover .icon,
-.clients-links:focus .icon {
+.clients-links:hover .clients-links__icon,
+.clients-links:focus .clients-links__icon {
   fill: var(--accent-color);
 }
 
