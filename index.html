@@ -426,31 +426,40 @@
 
     <!-- Container Information -->
 
-    <footer>
-      <div class="conteiner">
+    <footer class="footer">
+      <div class="conteiner footer__conteiner">
         <!-- Address -->
 
-        <div class="address-content">
+        <div class="address">
           <a lang="en" href="./index.html" class="logo footer__logo link"
             >Web<span class="logo__white">Studio</span></a
           >
           <address>
-            <ul class="address-list list">
-              <li>
-                <a href="https://goo.gl/maps/yYDRXDm1d8VH44QLA" target="_blank" class="map link"
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/yYDRXDm1d8VH44QLA"
+                  target="_blank"
+                  class="address__map link"
                   >г. Киев, пр-т Леси Украинки,26</a
                 >
               </li>
-              <li><a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a></li>
-              <li><a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a></li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__tel link">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
 
         <!-- Footer Links -->
 
-        <div class="footer-links-content">
-          <b class="footer-links-caption">присоединяйтесь</b>
+        <div class="footer-links">
+          <b class="footer-links__caption">присоединяйтесь</b>
           <ul class="networks list">
             <li class="networks__item">
               <a class="networks__icon networks__icon--fotter" href="" aria-label="instagram">
@@ -486,12 +495,12 @@
           </ul>
         </div>
 
-        <!-- Footer mailing -->
+        <!-- Footer form -->
 
         <form name="footer-form" autocomplete="on" class="footer-form">
-          <strong class="footer-form-titel">Подпишитесь на рассылку</strong>
-          <div class="mailing-field">
-            <input type="email" name="mail" placeholder="E-mail" class="mailing-input" />
+          <strong class="footer-form__titel">Подпишитесь на рассылку</strong>
+          <div class="mailing">
+            <input type="email" name="mail" placeholder="E-mail" class="mailing__input" />
 
             <button type="submit" class="button footer__button">
               Подписаться
