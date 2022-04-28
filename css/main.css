@@ -73,11 +73,9 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .networks__icon--fotter {
   background-color: rgba(255, 255, 255, 0.1);
 }
-
 .networks__icon:hover, .networks__icon:focus {
   background-color: #2196f3;
 }
@@ -86,19 +84,40 @@ img {
   width: 20px;
   height: 20px;
 }
-
 .networks__svg--footer {
   fill: #ffffff;
 }
-
 .networks__svg--team {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.networks__icon:hover .networks__svg--team,
-.networks__icon:focus .networks__svg--team {
+.networks__icon:hover .networks__svg--team, .networks__icon:focus .networks__svg--team {
   fill: #ffffff;
 }
-/*# sourceMappingURL=main.css.map */
+
+.footer__logo, .nav__logo {
+  color: #2196f3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.nav__logo {
+  padding: 24px 0;
+}
+
+.logo__black {
+  color: #000000;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__white {
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
