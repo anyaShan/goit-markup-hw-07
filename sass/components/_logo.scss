@@ -1,13 +1,3 @@
-%logo {
-    color: $accentColor;
-
-    font-family: $fontFamilyPtimary;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
-
 .nav__logo {
     @extend %logo;
     padding: 24px 0;
