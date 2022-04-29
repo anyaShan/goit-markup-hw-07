@@ -19,3 +19,11 @@
     letter-spacing: 0.03em;
 }
 
+%button {
+    display: inline-block;
+    font-family: inherit;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    transition: background-color $transition, color $transition;
+}
