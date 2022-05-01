@@ -78,7 +78,7 @@ img {
   margin-right: 10px;
 }
 
-.networks__icon {
+.networks__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,26 +94,26 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.networks__icon--fotter {
+.networks__link--fotter {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.networks__icon:hover, .networks__icon:focus {
+.networks__link:hover, .networks__link:focus {
   background-color: #2196f3;
 }
 
-.networks__svg {
+.networks__icon {
   width: 20px;
   height: 20px;
 }
-.networks__svg--footer {
+.networks__icon--footer {
   fill: #ffffff;
 }
-.networks__svg--team {
+.networks__icon--team {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.networks__icon:hover .networks__svg--team, .networks__icon:focus .networks__svg--team {
+.networks__link:hover .networks__icon--team, .networks__link:focus .networks__icon--team {
   fill: #ffffff;
 }
 
@@ -148,7 +148,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header__page {
+.header__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,6 +181,9 @@ img {
   color: #2196f3;
 }
 
+.nav__item {
+  position: relative;
+}
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -250,10 +253,10 @@ img {
   background-repeat: no-repeat;
   text-align: center;
 }
-.hero__page {
-  width: 696px;
-}
 .hero__title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
@@ -268,11 +271,24 @@ img {
   padding: 94px 0;
 }
 .section__title {
+  margin-bottom: 50px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+.section--padding {
+  padding-top: 0;
+}
+.section--background {
+  background-color: #f5f4fa;
+}
+
+.specifics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .specifics__item {
@@ -281,12 +297,8 @@ img {
 .specifics__item:not(:last-child) {
   margin-right: 30px;
 }
-.specifics__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.specifics__icon {
+
+.specifics__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,10 +313,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-.specifics__svg {
+
+.specifics__icon {
   width: 70px;
   height: 70px;
 }
+
 .specifics__caption {
   color: #212121;
   margin-bottom: 10px;
@@ -313,18 +327,13 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .specifics__text {
   font-size: 14px;
   line-height: 1.7;
 }
 
 .features {
-  padding-top: 0;
-}
-.features__title {
-  margin-bottom: 50px;
-}
-.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,12 +371,6 @@ img {
 }
 
 .team {
-  background-color: #f5f4fa;
-}
-.team__title {
-  margin-bottom: 50px;
-}
-.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,10 +404,7 @@ img {
   margin-bottom: 16px;
 }
 
-.clients__title {
-  margin-bottom: 50px;
-}
-.clients__list {
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +413,7 @@ img {
   margin-right: 30px;
 }
 
-.clients-links {
+.clients__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,16 +430,16 @@ img {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-links:hover, .clients-links:focus {
+.clients__links:hover, .clients__links:focus {
   border: 1px solid #2196f3;
 }
 
-.clients-links__icon {
+.clients__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-links:hover .clients-links__icon, .clients-links:focus .clients-links__icon {
+.clients__links:hover .clients__icon, .clients__links:focus .clients__icon {
   fill: #2196f3;
 }
 

@@ -1,4 +1,4 @@
-.clients-links {
+.clients__links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,12 +16,12 @@
 
 
 
-.clients-links__icon {
+.clients__icon {
     fill: $iconColor;
     transition: fill $transition;
 
-    .clients-links:hover &,
-    .clients-links:focus & {
+    .clients__links:hover &,
+    .clients__links:focus & {
         fill: $accentColor;
     }
 }

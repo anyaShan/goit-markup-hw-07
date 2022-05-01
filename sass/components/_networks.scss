@@ -4,7 +4,7 @@
 .networks__item:not(:last-child) {
     margin-right: 10px;
 }
-.networks__icon {
+.networks__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
         background-color: $accentColor;
     }
 }
-.networks__svg {
+.networks__icon {
     width: 20px;
     height: 20px;
 
@@ -34,8 +34,8 @@
         fill: $iconColor;
         transition: fill $transition;
 
-        .networks__icon:hover &,
-        .networks__icon:focus & {
+        .networks__link:hover &,
+        .networks__link:focus & {
             fill: $bgPrimaryColor;
         }
     }

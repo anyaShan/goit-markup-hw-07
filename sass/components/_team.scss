@@ -1,13 +1,5 @@
 .team {
-    background-color: $bgSecondaryColor;
-
-    &__title {
-        margin-bottom: 50px;
-    }
-    
-    &__list {
-        display: flex;
-    }
+    display: flex;
     
     &__item {
         max-width: 270px;
