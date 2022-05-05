@@ -40,15 +40,6 @@ img {
   overflow: hidden;
 }
 
-.footer__logo, .nav__logo {
-  color: #2196f3;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
 .works__button, .hero__button,
 .footer__button,
 .modal__button {
@@ -115,6 +106,15 @@ img {
 }
 .networks__link:hover .networks__icon--team, .networks__link:focus .networks__icon--team {
   fill: #ffffff;
+}
+
+.logo {
+  color: #2196f3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .nav__logo {
